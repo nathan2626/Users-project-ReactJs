@@ -16,14 +16,15 @@ const AddUser = (props) => {
         if(enteredUsername.trim().length === 0 || enteredAge.trim().length === 0 ) {
             console.log('Empty value');
             return;
-            
+
         } else  if(+enteredAge < 1) {
             console.log('Age cannot be less than 0');
             return;
         }
 
         console.log(enteredUsername, enteredAge);
-
+        props.onAddUser(enteredUsername, enteredAge);
+        
         //for reset a input value
         setEnteredUsername('');
         setEnteredAge('');
