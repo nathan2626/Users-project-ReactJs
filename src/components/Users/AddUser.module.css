@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+}
+
 .input {
     margin: 2rem auto;
     padding: 1rem;
@@ -24,3 +28,51 @@
     outline: none;
     border-color: #4f005f;
 }
+
+
+.linktr{
+    order: -1;
+    padding: 1.75rem;
+    text-align: center;
+  }
+  
+  .linktr__goal{
+    background-color: rgb(209, 246, 255);
+    color: rgb(8, 49, 112);
+    box-shadow: rgb(8 49 112 / 24%) 0px 2px 8px 0px;
+    border-radius: 2rem;
+    padding: .5rem 1.25rem;
+    text-decoration: none !important;
+  }
+  
+  @media (min-width: 1024px){
+    
+    .linktr{
+      position: absolute; 
+      right: 1rem; 
+      bottom: 1rem;
+    }
+  }
+  
+  .r-link{
+      --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+      --uirLinkTextColor: var(--rLinkTextColor);
+      --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+  
+      display: var(--uirLinkDisplay) !important;
+      color: var(--uirLinkTextColor) !important;
+  }
+  
+  /* necessary to give position: relative to parent. */
+   input[type="text"]{font: 15px/24px 'Muli', sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;} 
+  
+  :focus{outline: none;}
+  
+  .col_3{float: left; width: 97%; position: relative;} /* necessary to give position: relative to parent. */
+  input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+  
+  .effect_1 {border: 0; padding: 7px 0; border-bottom: 1px solid #ccc;}
+  
+  .effect_1 ~ .focus_border{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #118886; transition: 0.4s;}
+  .effect_1:focus ~ .focus_border{width: 100%; transition: 0.4s;}
+  

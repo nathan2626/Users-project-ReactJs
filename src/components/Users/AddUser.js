@@ -58,19 +58,48 @@ const AddUser = (props) => {
 
     return (
         <div>
+            <h1>Add User App with modal !</h1>
             {error && <ErrorModal headerTitle={error.title} message={error.message} onConfirm={errorHandler} />}
             <Card className={classes.input}>
                 <form onSubmit={addUserHandler}>
-                    <label htmlFor="username">Username</label>
+                    <div className={classes.mahi_holder}>
+                        <div className={classes.container}>
+                            <div className={ `${classes.row} ${classes.bg_1}` }>
+                                <div className={classes.col_3}>
+                                    <input className={classes.effect_1} id="username" type="text" value={enteredUsername} onChange={usernameChangedHandler} placeholder="Your username" />
+                                    <span className={classes.focus_border}></span>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div className={classes.mahi_holder}>
+                        <div className={classes.container}>
+                            <div className={ `${classes.row} ${classes.bg_1}` }>
+                                <div className={classes.col_3}>
+                                    <input className={classes.effect_1} id="age" type="number" value={enteredAge} onChange={ageChangedHandler} placeholder="Your age" />
+                                    <span className={classes.focus_border}></span>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    {/* <label htmlFor="username">Username</label>
                     <input id="username" type="text" value={enteredUsername} onChange={usernameChangedHandler} />
 
                     <label htmlFor="age">Age (years)</label>
-                    <input id="age" type="number" value={enteredAge} onChange={ageChangedHandler} />
+                    <input id="age" type="number" value={enteredAge} onChange={ageChangedHandler} /> */}
 
                     <Button type="submit">Add User</Button>
                 </form>
             </Card>
+
+            
+
+            <div className={classes.linktr}>
+                <a href="https://www.linkedin.com/in/nathan-journo/" target="_blank" className={`${classes.linktr__goal} ${classes.r__link}`}>Suivez-moi sur LinkedIn 💪💪💪</a>
+            </div>
+
         </div>
+        
     );
 };
 
