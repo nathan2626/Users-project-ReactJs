@@ -58,7 +58,7 @@ const AddUser = (props) => {
 
     return (
         <div>
-            <h1>Add User App with modal !</h1>
+            <h1>🚀 Add User App with modal ! 🧑🏻‍💻</h1>
             {error && <ErrorModal headerTitle={error.title} message={error.message} onConfirm={errorHandler} />}
             <Card className={classes.input}>
                 <form onSubmit={addUserHandler}>
