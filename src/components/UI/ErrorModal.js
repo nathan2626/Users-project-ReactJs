@@ -23,4 +23,4 @@ const ErrorModal = (props) => {
   );
 };
 
-export default ErrorModal;
+export default ErrorModal; 

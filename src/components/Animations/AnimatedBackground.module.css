@@ -25,26 +25,36 @@
 	bottom: 0;
 	left: 10vw;
 	animation: animate 15s linear infinite;
+	z-index: 0;
 }
 .box ul li:nth-child(2) {
 	left: 36vw;
 	animation-delay: 2s;
+	z-index: 0;
 }
 .box ul li:nth-child(3) {
 	left: 22vw;
 	animation-delay: 4s;
+	z-index: 0;
+
 }
 .box ul li:nth-child(4) {
 	left: 56vw;
 	animation-delay: 6s;
+	z-index: 0;
+
 }
 .box ul li:nth-child(5) {
 	left: 76vw;
 	animation-delay: 4s;
+	z-index: 0;
+
 }
 .box ul li:nth-child(6) {
 	left: 80vw;
 	animation-delay: 8s;
+	z-index: 0;
+
 }
 @keyframes animate {
 	0% {

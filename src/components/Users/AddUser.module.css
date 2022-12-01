@@ -76,3 +76,7 @@ h1 {
   .effect_1 ~ .focus_border{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #118886; transition: 0.4s;}
   .effect_1:focus ~ .focus_border{width: 100%; transition: 0.4s;}
   
+.fixZindex {
+  z-index: 99;
+  position: relative;
+}

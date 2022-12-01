@@ -61,7 +61,7 @@ const AddUser = (props) => {
             <h1>🚀 Add User App with modal ! 🧑🏻‍💻</h1>
             {error && <ErrorModal headerTitle={error.title} message={error.message} onConfirm={errorHandler} />}
             <Card className={classes.input}>
-                <form onSubmit={addUserHandler}>
+                <form className={classes.fixZindex} onSubmit={addUserHandler}>
                     <div className={classes.mahi_holder}>
                         <div className={classes.container}>
                             <div className={ `${classes.row} ${classes.bg_1}` }>
